@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76121269-9CF0-4153-9924-C289D7DDC3F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Administrando_datos</RootNamespace>
+    <AssemblyName>Administrando datos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Administración de Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Administración de Productos.Designer.cs">
+      <DependentUpon>Administración de Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\Formaregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Formaregistro.Designer.cs">
+      <DependentUpon>Formaregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\registro empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\registro empleados.Designer.cs">
+      <DependentUpon>registro empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Administración de Productos.resx">
+      <DependentUpon>Administración de Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Formaregistro.resx">
+      <DependentUpon>Formaregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\registro empleados.resx">
+      <DependentUpon>registro empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\132313677-icono-de-agregar-datos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70775.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5464742.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2232831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buildings-205986_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-1914309_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\architecture-7947724_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skyscraper-418189_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company-3175300_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paris-3547819_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\536514.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_57997.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_579971.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3775732-access-padlock-passkey-password-security_108981.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\awesome_view-wallpaper-10536682 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_windows-10-clean-dark_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\637170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1623861906_838413_1623862333_sumariofotogaleria_normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1623861906_838413_1623862333_sumariofotogaleria_normal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1623861906_838413_1623862333_sumariofotogaleria_normal2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-10-2560x1920-windows-logo-blue-pink-dark-hd-10954.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_add_insert_file_13948 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file256_25240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17_104874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-search_114446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17_1048741.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
